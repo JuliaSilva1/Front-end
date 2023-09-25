@@ -1,0 +1,24 @@
+.imagem{
+    background-repeat: no-repeat;
+    text-align: center;
+}
+@media(max-width:768px){
+    .imagem{
+        background-image:url(celular.webp);
+    }
+}
+@media(min-width:768px){
+    .imagem{
+        background-image:url(tablet.jpg);
+    }
+}
+@media(min-width:992px){
+    .imagem{
+        background-image:url(desktop.avif);
+    }
+}
+@media(min-width:1200px){
+    .imagem{
+        background-image:url(tv.avif);
+    }
+}

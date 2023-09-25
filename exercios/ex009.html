@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de música</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            color: #333;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 300% 300%;
+            animation: gradient 15s ease infinite;
+            height: 100vh;
+        }
+        @keyframes gradient{
+            0% {
+                background-position: 0% 50%;
+            }
+            50%{
+                background-position: 100% 50%;
+            }
+            100%{
+                background-position: 0% 50%;
+            }
+        }
+        img{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center text-info ">Lista de música</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr class="align-middle">
+                    <th class="d-none d-md-table-cell col-1" >ID</th>
+                    <th>Foto</th>
+                    <th>Musica</th>
+                    <th>Artista</th>
+                    <th class="d-none d-md-table-cell ">Duração</th>
+                    <th class="d-none d-md-table-cell ">Gênero</th>
+                    <th class="d-none d-md-table-cell ">Classificação</th>
+                    <th class="d-none d-md-table-cell "></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="align-middle">
+                    <td class="d-none d-md-table-cell" >#1</td>
+                    <td><img class="rounded-3" src="gustavo.jfif" class="w-25" alt=""></td>
+                    <td>Moletom</td>
+                    <td>Gustavo mioto</td>
+                    <td class="d-none d-md-table-cell ">3:15</td>
+                    <td class="d-none d-md-table-cell ">Sertanejo</td>
+                    <td class="d-none d-md-table-cell "><i class="bi bi-star-fill text-warning "></i><i class="bi bi-star-fill text-warning "><i class="bi bi-star-fill text-warning "><i class="bi bi-star text-warning "><i class="bi bi-star text-warning "></i></td>
+                    <td class="d-none d-md-table-cell "><i class="bi bi-pencil-fill text-primary "></i><i class="bi bi-exclamation-circle-fill text-success "></i><i class="bi bi-trash3-fill text-danger "></i></td>
+                </tr>
+            </tbody>
+            </thead>
+            <tbody>
+                <tr class="align-middle">
+                    <td class="d-none d-md-table-cell">#2</td>
+                    <td><img class="rounded-3" src="gusttavo-lima.webp" alt=""></td>
+                    <td>Desejo mortal</td>
+                    <td>Gustavo lima</td>
+                    <td class="d-none d-md-table-cell ">3:15</td>
+                    <td class="d-none d-md-table-cell ">Sertanejo</td>
+                    <td class="d-none d-md-table-cell "><i class="bi bi-star-fill text-warning "></i><i class="bi bi-star-fill text-warning "><i class="bi bi-star-fill text-warning "><i class="bi bi-star text-warning "><i class="bi bi-star text-warning "></i></td>
+                    <td class="d-none d-md-table-cell "><i class="bi bi-pencil-fill text-primary "></i><i class="bi bi-exclamation-circle-fill text-success "></i><i class="bi bi-trash3-fill text-danger "></i></td>
+            
+                </tr>
+                </tbody>
+                <tbody>
+                <tr class="align-middle">
+                    <td class="d-none d-md-table-cell">#3</td>
+                    <td><img class="rounded-3" src="ze-neto.jpg" alt=""></td>
+                    <td>Oi balde</td>
+                    <td>Zé neto e Cristiano</td>
+                    <td class="d-none d-md-table-cell "> 3:05</td>
+                    <td class="d-none d-md-table-cell ">Sertanejo</td>
+                    <td class="d-none d-md-table-cell "><i class="bi bi-star-fill text-warning "></i><i class="bi bi-star-fill text-warning "><i class="bi bi-star-fill text-warning "></i></i><i class="bi bi-star text-warning "><i class="bi bi-star text-warning "></i></td>
+                    <td class="d-none d-md-table-cell "><i class="bi bi-pencil-fill text-primary"></i><i class="bi bi-exclamation-circle-fill text-success "></i><i class="bi bi-trash3-fill text-danger "></i></td>
+                </tr>
+            </tbody>
+        </table>
+        <ul class="pagination justify-content-center ">
+            <li class="page-item active ">
+                <a href="#" class="page-link">Anterior</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">1</a>
+            </li>
+            <li class="page-item ">
+                <a href="#" class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link d-none d-md-table-cell ">3</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link d-none d-md-table-cell ">4</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link d-none d-md-table-cell ">5</a>
+            </li>
+            <li class="page-item">
+                <a href="#" class="page-link">Proximo</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
